@@ -1,0 +1,25 @@
+/*medium css*/
+@media all and (max-width: 990px) {
+  .banner h1 {
+    font-size: 2em;
+  }
+  .banner h2 {
+    font-size: 1em;
+  }
+  main .upcycle .image_text h1 {
+    font-size: 2em;
+  }
+  .upcycle .image_text p {
+    font-size: 0.8em !important;
+    width: 50%;
+  }
+  main .mission .image_text h1 {
+    font-size: 2em;
+  }
+  main .mission .image_text p {
+    width: 80%;
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=medium.css.map */

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*watch files code: sass --watch styles:styles */
+
+/*colors*/
+$green: #606C38 ;
+$orange: #DDA15E;
+$tan: #FEFAE0;
+$darkgreen: #283618;
+$shadowtext:2px 2px 5px black;
+$heading_font: 1em * 3;
+$paragraph_font1: 1.1em ;
+$paragraph_font2: 20px ;
+$font_header: "Permanent Marker", serif;
+
+/*Fonts*/
+h1, h2 {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+}
+
+/*navbar*/
+html{
+    margin: 0px;
+}
+header {
+    background: $green;
+    padding-right: 100px;
+    margin-right: -10px;
+}
+
+
+nav  {
+    text-align: center;
+    a:hover {
+      background-color: $orange;
+      color: $green;
+      width: 300px;
+      transition: 1s;
+    }
+
+    a {
+      border-radius: 10px;
+      padding: 10px ;
+      text-decoration: none;
+       color: $tan;
+  }
+}
+nav button {
+  display: none;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  width: 20%;
+  padding: 20px;
+}
+.top_nav  {
+  display: flex;
+    padding-left: 40%;
+    font-size: 1.4em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+ul {
+    display: flex;
+    padding: 50px 0px 50px 65px;
+    list-style-type: none; 
+    margin: 0;
+    
+}
+ h1{
+    margin: 0;
+ }
+
+ @mixin word_position {
+  position: relative;
+  text-align: left;
+  color: $tan;
+  margin: 0;
+  
+  img {
+    width: 103.5%;
+  }
+
+ }
+/*banner img*/
+ .banner{
+  @include word_position;
+  text-shadow: $shadowtext;
+  h1{
+    font-size: $heading_font;
+    line-height: 0.8;
+      h2 {
+        text-align: left;
+    }
+  } 
+
+ }
+  .image_text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    
+  }
+
+
+  /*background */
+body{
+    background: $tan;
+    margin-top: -10px;
+}
+
+/* Meet the Animals*/ 
+.animals_shop{
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+  h1 {
+    color: $green;
+    font-size: 40px;
+    padding-top: 20px;
+  }
+}
+.animal_pics{
+  padding-left: 10%;
+  img{
+    width: 300px;
+    padding: 30px 30px 30px 0px;
+  }
+}
+
+/*shop animals button*/
+@mixin button {
+  font-size: $paragraph_font1;
+  color: $tan;
+  background-color: $green;
+  padding: 10px;
+  border: none;
+  &:hover {
+    background-color: $orange;
+    color: $tan;
+    border-radius: 10px;
+    transition: 1s;
+  }
+}
+.animals_button{
+@include button;
+margin-left: 0px;
+}
+
+
+
+/*Our Mission*/
+.mission{
+  padding-top: 2%;
+  @include word_position; 
+ }
+  .mission .image_text {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    padding-right: 10px;
+    h1{
+      font-size: $heading_font;
+    } 
+    p{
+      font-size: $paragraph_font1;    
+        }
+  }
+
+/*inspire imagination*/
+.costumes {
+  align-items: center;
+  justify-items: center;
+  color: $green;
+  padding-bottom: 10px;
+  img{
+    width: 100%;
+  }
+}
+.costume_button {
+  @include button;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/*what makes us unique*/
+.unique {
+  padding-top: 20px;
+  justify-content: center;
+  justify-items: center;
+  color: $green;
+  .unique_pic{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+  }
+  h2, p {
+    text-align: center;
+  }
+}
+
+.unique_section {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;
+  color: $green;
+  section {
+    width: 40%;
+    max-width: 60ch;
+    padding-left: 20px;
+  }
+}
+
+
+
+/*why upcycle*/
+.upcycle {
+  color: $tan;
+}
+.upcycle{
+  padding-top: 2%;
+  @include word_position; 
+ }
+  .upcycle .image_text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    padding-right: 10px;
+    h1{
+      font-size: $heading_font;
+    } 
+    p{
+      font-size: $paragraph_font1;  
+      width: 50%;
+        }
+  }
+/*footer*/
+
+footer{
+    background-color: $darkgreen;
+    color: $tan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul{
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+    li{
+     
+      list-style-type: none; 
+      margin: 0;
+    }
+    a:hover {
+      color: $orange;
+      transition: 1s;
+    }
+
+    a {
+      border-radius: 10px;
+      padding: 10px ;
+      text-decoration: none;
+       color: $tan;
+  }
+}
+
+/* About Us Webpage*/
+
+.about{
+  display: flex;
+  justify-content: center;
+  p{
+    color: $green;
+  }
+  h1{
+    color: $green;
+  }
+  div {
+    padding: 50px;
+  }
+  .about_me {
+    p {
+     max-width: 60ch;
+    }
+  }
+}
+.mission {
+  div p {
+    max-width: 60ch;
+    text-indent: 30px;
+  }
+}
+
+.banner {
+  h1{
+    font-size: 2em;
+  }
+} 
+
+
+/*Shop Webpage*/
+.costumes_shop {
+ justify-content: center;
+ align-items: center;
+ justify-items: center;
+ img{
+  padding: 0;
+ }
+ h1 {
+  color: $green;
+}
+}
+
+.animals_shop {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  img{
+   padding: 10px 0px 10px 0; 
+  }
+}
+
+.animal_pics {
+  padding: 0;
+}

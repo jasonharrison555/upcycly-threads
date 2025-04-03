@@ -1,0 +1,33 @@
+/*banner img
+.image_text {
+    text-align: center;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #52787A;
+    background-image: url('../images/example2.1.png') ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+{
+    position: relative;
+    text-align: center;
+    color: $tan;
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+  }
+  .banner img {
+    width: 100%;
+  }
+
+
+
+
+*/
+/*header*/

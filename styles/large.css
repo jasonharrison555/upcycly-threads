@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+/*watch files code: sass --watch styles:styles */
+/*colors*/
+/*Fonts*/
+h1, h2 {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+}
+
+/*navbar*/
+html {
+  margin: 0px;
+}
+
+header {
+  background: #606C38;
+  padding-right: 100px;
+  margin-right: -10px;
+}
+
+nav {
+  text-align: center;
+}
+nav a:hover {
+  background-color: #DDA15E;
+  color: #606C38;
+  width: 300px;
+  transition: 1s;
+}
+nav a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #FEFAE0;
+}
+
+nav button {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  width: 20%;
+  padding: 20px;
+}
+
+.top_nav {
+  display: flex;
+  padding-left: 40%;
+  font-size: 1.4em;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+ul {
+  display: flex;
+  padding: 50px 0px 50px 65px;
+  list-style-type: none;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*banner img*/
+.banner {
+  position: relative;
+  text-align: left;
+  color: #FEFAE0;
+  margin: 0;
+  text-shadow: 2px 2px 5px black;
+}
+.banner img {
+  width: 103.5%;
+}
+.banner h1 {
+  font-size: 3em;
+  line-height: 0.8;
+}
+.banner h1 h2 {
+  text-align: left;
+}
+
+.image_text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+/*background */
+body {
+  background: #FEFAE0;
+  margin-top: -10px;
+}
+
+/* Meet the Animals*/
+.animals_shop {
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+.animals_shop h1 {
+  color: #606C38;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.animal_pics {
+  padding-left: 10%;
+}
+.animal_pics img {
+  width: 300px;
+  padding: 30px 30px 30px 0px;
+}
+
+/*shop animals button*/
+.animals_button {
+  font-size: 1.1em;
+  color: #FEFAE0;
+  background-color: #606C38;
+  padding: 10px;
+  border: none;
+  margin-left: 0px;
+}
+.animals_button:hover {
+  background-color: #DDA15E;
+  color: #FEFAE0;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/*Our Mission*/
+.mission {
+  padding-top: 2%;
+  position: relative;
+  text-align: left;
+  color: #FEFAE0;
+  margin: 0;
+}
+.mission img {
+  width: 103.5%;
+}
+
+.mission .image_text {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  padding-right: 10px;
+}
+.mission .image_text h1 {
+  font-size: 3em;
+}
+.mission .image_text p {
+  font-size: 1.1em;
+}
+
+/*inspire imagination*/
+.costumes {
+  align-items: center;
+  justify-items: center;
+  color: #606C38;
+  padding-bottom: 10px;
+}
+.costumes img {
+  width: 100%;
+}
+
+.costume_button {
+  font-size: 1.1em;
+  color: #FEFAE0;
+  background-color: #606C38;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.costume_button:hover {
+  background-color: #DDA15E;
+  color: #FEFAE0;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/*what makes us unique*/
+.unique {
+  padding-top: 20px;
+  justify-content: center;
+  justify-items: center;
+  color: #606C38;
+}
+.unique .unique_pic {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 50%;
+}
+.unique h2, .unique p {
+  text-align: center;
+}
+
+.unique_section {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;
+  color: #606C38;
+}
+.unique_section section {
+  width: 40%;
+  max-width: 60ch;
+  padding-left: 20px;
+}
+
+/*why upcycle*/
+.upcycle {
+  color: #FEFAE0;
+}
+
+.upcycle {
+  padding-top: 2%;
+  position: relative;
+  text-align: left;
+  color: #FEFAE0;
+  margin: 0;
+}
+.upcycle img {
+  width: 103.5%;
+}
+
+.upcycle .image_text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  padding-right: 10px;
+}
+.upcycle .image_text h1 {
+  font-size: 3em;
+}
+.upcycle .image_text p {
+  font-size: 1.1em;
+  width: 50%;
+}
+
+/*footer*/
+footer {
+  background-color: #283618;
+  color: #FEFAE0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+footer li {
+  list-style-type: none;
+  margin: 0;
+}
+footer a:hover {
+  color: #DDA15E;
+  transition: 1s;
+}
+footer a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #FEFAE0;
+}
+
+/* About Us Webpage*/
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about p {
+  color: #606C38;
+}
+.about h1 {
+  color: #606C38;
+}
+.about div {
+  padding: 50px;
+}
+.about .about_me p {
+  max-width: 60ch;
+}
+
+.mission div p {
+  max-width: 60ch;
+  text-indent: 30px;
+}
+
+.banner h1 {
+  font-size: 2em;
+}
+
+/*Shop Webpage*/
+.costumes_shop {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.costumes_shop img {
+  padding: 0;
+}
+.costumes_shop h1 {
+  color: #606C38;
+}
+
+.animals_shop {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.animals_shop img {
+  padding: 10px 0px 10px 0;
+}
+
+.animal_pics {
+  padding: 0;
+}
+
+/*# sourceMappingURL=large.css.map */
